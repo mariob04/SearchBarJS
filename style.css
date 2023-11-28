@@ -21,12 +21,43 @@ body {
   color: rgb(90, 118, 119);
 }
 
-#results {
-  list-style: none;
-  padding: 5px;
-  text-transform: capitalize;
+#search-button {
+  height: 40px;
+  width: 100px;
+  background-color: rgb(64, 102, 184);
+  color: white;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 20px;
+  outline: none;
+  cursor: pointer;
 }
 
-#results li {
-  margin: 5px 0;
+#search-button:hover {
+  background-color: rgb(99, 135, 212);
+}
+
+#results {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+}
+
+.card {
+  border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+  width: 100%;
+  border-radius: 4px;
+}
+
+.artist-name {
+  font-size: 16px;
+  font-weight: 600;
 }
